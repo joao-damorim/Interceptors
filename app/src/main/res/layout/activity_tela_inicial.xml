@@ -1,37 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_margin="0dp"
-    android:fillViewport="true">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="usuario.gui.TelaInicialActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/boasVindas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="40pt"
+        android:text="Bem Vindo(a), "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10pt"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBackground"
-        tools:context="usuario.gui.TelaInicialActivity"
-        android:weightSum="1">
+        android:layout_height="451dp"
+        android:layout_margin="0dp"
+        android:fillViewport="true"
+        android:layout_weight="0.11">
 
-        <TextView
-            android:id="@+id/boasVindas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10pt"
-            android:layout_marginLeft="50pt"
-            android:text="Bem Vindo(a), "
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="8pt"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="334dp"
-            android:text="TextView"
-            android:layout_weight="0.34" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginLeft="5pt"
+                android:text="@string/titulo_o_que_especie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
 
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:text="@string/texto_o_que_especie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginLeft="5pt"
+                android:text="@string/titulo_por_que_especie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:text="@string/texto_por_que_especie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_tela_especie_invasora"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/screen_border"
+        android:onClick=""
+        android:text="@string/texto_tela_especie_invasora" />
+</LinearLayout>

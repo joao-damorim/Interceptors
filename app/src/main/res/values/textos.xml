@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto_o_que_especie">De acordo com a Convenção sobre Diversidade Biológica - CDB, \"espécie exótica\" é toda espécie que se encontra fora de sua área de distribuição natural. "Espécie Exótica Invasora", por sua vez, é definida como sendo aquela que ameaça ecossistemas, hábitats ou espécies. Estas espécies, por suas vantagens competitivas e favorecidas pela ausência de inimigos naturais, têm capacidade de se proliferar e invadir ecossistemas, sejam eles naturais ou antropizados. </string>
+    <string name="titulo_o_que_especie">O que é espécie invasora?</string>
+    <string name="titulo_por_que_especie">Por que ajudar o projeto Interceptors?</string>
+    <string name="texto_por_que_especie">Espécies exóticas invasoras têm invadido e afetado a biota nativa de, praticamente, todos os ecossistemas da Terra. Espécies exóticas invasoras foram reconhecidas em todos os grandes grupos taxonômicos, incluindo os vírus, fungos, algas, briófitas, pteridófitas, plantas superiores, invertebrados, peixes, anfíbios, répteis, pássaros e mamíferos.
+    "\n\n"Espécies exóticas invasoras representam uma das maiores ameaças ao meio ambiente, com enormes prejuízos à economia, à biodiversidade e aos ecossistemas naturais, além dos riscos à saúde humana. São consideradas a segunda maior causa de perda de biodiversidade, após as perda e degradação de habitats.</string>
+</resources>
