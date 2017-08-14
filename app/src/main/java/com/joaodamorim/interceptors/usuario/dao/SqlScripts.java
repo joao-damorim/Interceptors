@@ -21,6 +21,17 @@ public class SqlScripts {
         pessoaBuilder.append(PESSOA_USER + " text not null unique);");
         return pessoaBuilder.toString();
     }
+    protected String createTabelaEspecie(){
+
+        StringBuilder especieBuilder = new StringBuilder();
+        especieBuilder.append("CREATE TABLE " + TABELA_ESPECIE + " ( ");
+        especieBuilder.append(ID_ESPECIE + "integer primary key autoincrement, ");
+        especieBuilder.append(NOME_ESPECIE + " text not null, ");
+        especieBuilder.append(QUANTIDADE_ESPECIE + " text not null, )");
+        especieBuilder.append(LOCAL_ESPECIE + " text not null);");
+        return especieBuilder.toString();
+    }
+
     protected String cmdWhere(String tabela, String a, String b){
         return "SELECT * FROM " + tabela + " WHERE " + a + " LIKE ? AND " + b + " LIKE ?";
     }

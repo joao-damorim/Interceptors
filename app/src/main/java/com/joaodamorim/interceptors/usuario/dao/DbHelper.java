@@ -21,6 +21,14 @@ public class DbHelper extends SQLiteOpenHelper {
     protected static final String NOME = "nome";
     protected static final String PESSOA_USER = "pessoa_usuario";
 
+    // TABELA DAS ESPECIES
+    protected static final String TABELA_ESPECIE = "tabela_especies";
+    protected static final String ID_ESPECIE = "_id_especie";
+    protected static final String NOME_ESPECIE = "nome_especie";
+    protected static final String QUANTIDADE_ESPECIE = "quant_especie";
+    protected static final String LOCAL_ESPECIE = "local_especie";
+
+
     public DbHelper(Context context) {
         super(context, NOME_DB, null, VERSAO);
     }
@@ -29,12 +37,14 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(scripts.createTabelaUsuario());
         db.execSQL(scripts.createTabelaPessoa());
+        db.execSQL(scripts.createTabelaEspecie());
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABELA_USUARIO);
         db.execSQL("DROP TABLE IF EXISTS " + TABELA_PESSOA);
+        db.execSQL("DROP TABLE IF EXISTS " + TABELA_ESPECIE);
 
         onCreate(db);
     }

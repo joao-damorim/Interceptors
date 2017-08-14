@@ -1,9 +1,11 @@
 package com.joaodamorim.interceptors.usuario.gui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.joaodamorim.interceptors.R;
@@ -32,5 +34,9 @@ public class TelaInicialActivity extends AppCompatActivity {
         boasVindas = (TextView)findViewById(R.id.boasVindas);
         String bemvindo = boasVindas.getText().toString() +  sessao.getNome() + ".";
         boasVindas.setText(bemvindo);
+    }
+    public void inserirEspecie(View view) throws Exception{
+        Intent i = new Intent(TelaInicialActivity.this, EspecieActivity.class);
+        startActivity(i);
     }
 }
