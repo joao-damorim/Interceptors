@@ -16,9 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".usuario.gui.LogInActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".usuario.gui.LogInActivity"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".usuario.gui.CadastroActivity" />
-        <activity android:name=".usuario.gui.TelaInicialActivity"/>
+        <activity android:name=".usuario.gui.TelaInicialActivity" />
+        <activity android:name=".usuario.gui.EspecieActivity"></activity>
     </application>
 
 </manifest>
