@@ -19,6 +19,23 @@
         android:id="@+id/texto"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center"
         android:layout_below="@id/progress"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/screen_border"
+        android:onClick="acessarRelatorio"
+        android:text="@string/btn_acessarRelatorio" />
 
 </RelativeLayout>

@@ -33,6 +33,7 @@
     <string name="quant_especie">Quantidade</string>
     <string name="local_especie">Local</string>
     <string name="btn_calcularEspecie">Calcular Impacto</string>
+    <string name="btn_acessarRelatorio">Acessar Relatório</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

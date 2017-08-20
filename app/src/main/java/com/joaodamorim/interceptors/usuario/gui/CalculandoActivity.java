@@ -1,7 +1,9 @@
 package com.joaodamorim.interceptors.usuario.gui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -19,5 +21,10 @@ public class CalculandoActivity extends AppCompatActivity {
         TextView texto = (TextView) findViewById(R.id.texto);
 
         new MinhaTask(this, progress, texto).execute();
+    }
+
+    public void acessarRelatorio (View view) throws Exception{
+        Intent i = new Intent(CalculandoActivity.this, RelatorioActivity.class);
+        startActivity(i);
     }
 }

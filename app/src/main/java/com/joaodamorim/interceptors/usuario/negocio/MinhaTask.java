@@ -21,6 +21,7 @@ public class MinhaTask extends AsyncTask<Object, Object, String> {
 
     @Override
     protected void onPreExecute() {
+        texto.setTextSize(22);
         texto.setText("0%");
         super.onPreExecute();
     }
@@ -47,6 +48,7 @@ public class MinhaTask extends AsyncTask<Object, Object, String> {
     protected void onProgressUpdate(Object... values) {
         total += PROGRESSO;
         progressBar.incrementProgressBy(PROGRESSO);
+        texto.setTextSize(22);
         texto.setText(total + "%");
 
         super.onProgressUpdate(values);
@@ -55,7 +57,8 @@ public class MinhaTask extends AsyncTask<Object, Object, String> {
     @Override
     protected void onPostExecute(String result) {
         progressBar.setVisibility(ProgressBar.INVISIBLE);
-        texto.setText("Tarefa concluída");
+        texto.setTextSize(22);
+        texto.setText("Cálculo concluído");
         texto.setGravity(Gravity.CENTER_HORIZONTAL);
         super.onPostExecute(result);
     }

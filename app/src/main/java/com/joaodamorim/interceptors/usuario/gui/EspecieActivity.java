@@ -52,7 +52,7 @@ public class EspecieActivity extends AppCompatActivity {
         et_local_especie.addTextChangedListener(textWatcher);
 
     }
-    public void calcularEspecie (View view) throws Exception{
+    public void calcularImpacto (View view) throws Exception{
         Intent i = new Intent(EspecieActivity.this, CalculandoActivity.class);
         startActivity(i);
 
