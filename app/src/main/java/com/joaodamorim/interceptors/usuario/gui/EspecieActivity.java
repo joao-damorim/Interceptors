@@ -1,5 +1,6 @@
 package com.joaodamorim.interceptors.usuario.gui;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,6 +53,8 @@ public class EspecieActivity extends AppCompatActivity {
 
     }
     public void calcularEspecie (View view) throws Exception{
+        Intent i = new Intent(EspecieActivity.this, CalculandoActivity.class);
+        startActivity(i);
 
     }
 
