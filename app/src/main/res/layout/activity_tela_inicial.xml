@@ -16,44 +16,44 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10pt"
         android:layout_marginLeft="5pt"
-        android:text="Bem Vindo(a) ao Projeto Interceptors, "
+        android:text="Bem-vindo(a) ao Projeto Interceptors, "
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="6pt"
+        android:textSize="6.5pt"
         android:textAppearance="@style/Base.TextAppearance.AppCompat" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="451dp"
+        android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:fillViewport="true"
-        android:layout_weight="0.11">
+        android:layout_weight="0.11"
+        android:fillViewport="true">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
                 android:layout_marginLeft="5pt"
+                android:layout_marginTop="10pt"
                 android:text="@string/titulo_o_que_especie"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5pt"
                 android:layout_marginLeft="5pt"
                 android:layout_marginRight="5pt"
+                android:layout_marginTop="5pt"
                 android:text="@string/texto_o_que_especie"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -61,18 +61,18 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10pt"
                 android:layout_marginLeft="5pt"
+                android:layout_marginTop="10pt"
                 android:text="@string/titulo_por_que_especie"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5pt"
                 android:layout_marginLeft="5pt"
                 android:layout_marginRight="5pt"
+                android:layout_marginTop="5pt"
                 android:text="@string/texto_por_que_especie"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -88,6 +88,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="12dp"
+        android:layout_marginBottom="450dp"
         android:background="@drawable/screen_border"
         android:onClick="inserirEspecie"
         android:text="@string/texto_tela_especie_invasora" />

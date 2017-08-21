@@ -33,7 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/screen_border"
         android:onClick="acessarRelatorio"
         android:text="@string/btn_acessarRelatorio" />

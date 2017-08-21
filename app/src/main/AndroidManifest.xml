@@ -21,7 +21,9 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".usuario.gui.CadastroActivity" />
         <activity android:name=".usuario.gui.TelaInicialActivity" />
-        <activity android:name=".usuario.gui.EspecieActivity" />
+        <activity
+            android:name=".usuario.gui.EspecieActivity"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".usuario.gui.CalculandoActivity" />
         <activity android:name=".usuario.gui.RelatorioActivity"></activity>
     </application>

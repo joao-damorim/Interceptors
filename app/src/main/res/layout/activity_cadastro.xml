@@ -80,7 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="70dp"
             android:background="@drawable/screen_border"
             android:onClick="cadastrar"
             android:text="@string/btn_cadastrar" />
