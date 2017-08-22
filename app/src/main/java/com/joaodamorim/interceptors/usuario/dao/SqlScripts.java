@@ -25,9 +25,9 @@ public class SqlScripts {
 
         StringBuilder especieBuilder = new StringBuilder();
         especieBuilder.append("CREATE TABLE " + TABELA_ESPECIE + " ( ");
-        especieBuilder.append(ID_ESPECIE + "integer primary key autoincrement, ");
+        especieBuilder.append(ID_ESPECIE + " integer primary key autoincrement, ");
         especieBuilder.append(NOME_ESPECIE + " text not null, ");
-        especieBuilder.append(QUANTIDADE_ESPECIE + " text not null, )");
+        especieBuilder.append(QUANTIDADE_ESPECIE + " text not null, ");
         especieBuilder.append(LOCAL_ESPECIE + " text not null);");
         return especieBuilder.toString();
     }
