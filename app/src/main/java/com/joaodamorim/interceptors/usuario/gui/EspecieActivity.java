@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.joaodamorim.interceptors.R;
+import com.joaodamorim.interceptors.usuario.negocio.EspecieNegocio;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -21,6 +22,7 @@ public class EspecieActivity extends AppCompatActivity {
     private EditText etQuantEspecie;
     private EditText etLocalEspecie;
     private ArrayList<String> listaRelatorio;
+    private EspecieNegocio especieNegocio;
 
     private Resources resources;
 
@@ -63,9 +65,17 @@ public class EspecieActivity extends AppCompatActivity {
     public void calcularImpacto(View view) throws Exception {
         boolean validar = validarCampos();
         if (validar) {
+            especieNegocio = new EspecieNegocio();
             listaRelatorio = new ArrayList<String>();
+            listaRelatorio.add("*** Nome da Espécie ***");
             listaRelatorio.add(etNomeEspecie.getText().toString());
+            listaRelatorio.add("*** Quantidade avistada ***");
             listaRelatorio.add(etQuantEspecie.getText().toString());
+            listaRelatorio.add("*** Taxa de Cresimento ao ano de acordo com a quantidade avistada ***");
+            listaRelatorio.add(especieNegocio.quantEspecieCalculo(etQuantEspecie.getText().toString()));
+            listaRelatorio.add("*** Danos esperados ***");
+            listaRelatorio.add(especieNegocio.danosEspecie(etNomeEspecie.getText().toString()));
+            listaRelatorio.add("*** Local do Avistamento ***");
             listaRelatorio.add(etLocalEspecie.getText().toString());
 
             Intent i = new Intent(EspecieActivity.this, CalculandoActivity.class);

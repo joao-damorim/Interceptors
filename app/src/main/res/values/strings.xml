@@ -37,6 +37,7 @@
     <string name="textView_relatorio">Relatório de crescimento e danos</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="btn_voltar_para_tela_inicial">Voltar para Tela Inicial</string>
 
     <string name="action_settings">Settings</string>
     <string name="texto_tela_especie_invasora">Inserir espécie invasora</string>

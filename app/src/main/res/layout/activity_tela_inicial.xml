@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -19,15 +17,15 @@
         android:text="Bem-vindo(a) ao Projeto Interceptors, "
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="6.5pt"
+        android:textSize="6.75pt"
         android:textAppearance="@style/Base.TextAppearance.AppCompat" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="433dp"
         android:layout_margin="0dp"
-        android:layout_weight="0.11"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:layout_weight="0.64">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -76,6 +74,16 @@
                 android:text="@string/texto_por_que_especie"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginTop="5pt"
+                android:text="@string/fonte_texto_especie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -88,7 +96,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="450dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/screen_border"
         android:onClick="inserirEspecie"
         android:text="@string/texto_tela_especie_invasora" />

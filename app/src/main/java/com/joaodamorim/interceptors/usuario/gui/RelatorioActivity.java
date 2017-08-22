@@ -1,7 +1,9 @@
 package com.joaodamorim.interceptors.usuario.gui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -23,5 +25,8 @@ public class RelatorioActivity extends AppCompatActivity {
         ListView lista = (ListView) findViewById(R.id.lvRelatorio);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listaEspecie);
         lista.setAdapter(arrayAdapter);
+    }
+    public void voltarParaTelaInicial(View view) throws Exception{
+        startActivity(new Intent(RelatorioActivity.this, TelaInicialActivity.class));
     }
 }
